@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AliControl - Dashboard</title>
+    <!-- CSS Próprio Local e Sem JavaScript -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="app-container min-h-screen">
+        
+        <!-- SIDEBAR / MENU LATERAL -->
+       <aside class="sidebar flex flex-col">
+
+            <!-- Bloco do Logo Oficial Adaptado -->
+            <div class="logo-container">
+                <!-- Ícone do App em formato de caixa verde arredondada -->
+                <div class="logo-icon">
+                    <!-- Letra A / Gráfico em formato de montanha -->
+                    <svg class="logo-svg" viewBox="0 0 24 24">
+                        <polyline points="4 18 11 8 15 13 20 6"></polyline>
+                    </svg>
+                    <!-- Barras verticais do gráfico menor -->
+                    <div class="logo-bars">
+                        <div class="bar-short"></div>
+                        <div class="bar-tall"></div>
+                    </div>
+                </div>
+
+                <!-- Tipografia do Logo com as duas cores -->
+                <h2 class="logo-text">
+                    <span class="text-green">Ali</span><span class="text-white">Control</span>
+                </h2>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active">
+                    <span>📊</span> Dashboard
+                </a>
+                <a href="#" class="nav-link">
+                    <span>💵</span> Gastos
+                </a>
+                <a href="#" class="nav-link">
+                    <span>🍕</span> Categorias
+                </a>
+                <a href="#" class="nav-link">
+                    <span>📄</span> Relatórios
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="#" class="nav-link">
+                    <span>⚙️</span> Configurações
+                </a>
+            </div>
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main-content">
+            
+            <!-- HEADER -->
+            <header class="flex flex-col page-header">
+                <div>
+                    <h1 class="text-2xl text-gray-900">Olá, Alina!</h1>
+                    <p class="text-sm text-gray-500">Bem-vinda de volta ao seu controle financeiro.</p>
+                </div>
+                <div class="card flex items-center period-card">
+                    <span>📅</span>
+                    <span class="text-sm font-bold text-gray-700">Abril/2026</span>
+                </div>
+            </header>
+
+            <!-- CARD HIGHLIGHTS (KPIs) -->
+            <section class="grid-kpis">
+                <!-- Total Gasto -->
+                <div class="card flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-uppercase">Total gasto no mês</p>
+                        <h3 class="text-2xl text-gray-900 mt-1">R$ 2.500,00</h3>
+                    </div>
+                    <div class="kpi-icon kpi-icon-red">📈</div>
+                </div>
+
+                <!-- Gasto Médio Diário -->
+                <div class="card flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-uppercase">Gasto médio diário</p>
+                        <h3 class="text-2xl text-gray-900 mt-1">R$ 83,33</h3>
+                    </div>
+                    <div class="kpi-icon kpi-icon-sky">🧮</div>
+                </div>
+
+                <!-- Total de Gastos -->
+                <div class="card flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-uppercase">Total de transações</p>
+                        <h3 class="text-2xl text-gray-900 mt-1">29</h3>
+                        
+                    </div>
+                    <div class="kpi-icon kpi-icon-amber">💳</div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO DE GRÁFICOS E LISTAS -->
+            <section class="grid-charts">
+                
+                <!-- GASTOS POR CATEGORIA -->
+                <div class="card col-chart">
+                    <h3 class="font-bold text-gray-900 section-title">Gastos por categoria</h3>
+                    <p class="text-xs mb-6">Referente a Abril/2026</p>
+                    
+                    <div>
+                        <!-- Educação -->
+                        <div class="flex justify-between text-sm font-bold category-row">
+                            <span>Educação (35%)</span>
+                            <span class="text-gray-900">R$ 875,00</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-education"></div>
+                        </div>
+
+                        <!-- Alimentação -->
+                        <div class="flex justify-between text-sm font-bold category-row">
+                            <span>Alimentação (30%)</span>
+                            <span class="text-gray-900">R$ 750,00</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-food"></div>
+                        </div>
+
+                        <!-- Saúde -->
+                        <div class="flex justify-between text-sm font-bold category-row">
+                            <span>Saúde (25%)</span>
+                            <span class="text-gray-900">R$ 625,00</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-health"></div>
+                        </div>
+
+                        <!-- Lazer -->
+                        <div class="flex justify-between text-sm font-bold category-row">
+                            <span>Lazer (10%)</span>
+                            <span class="text-gray-900">R$ 250,00</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-leisure"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold text-sm category-total">
+                        <span>Total</span>
+                        <span class="category-total-value">R$ 2.500,00</span>
+                    </div>
+                </div>
+
+                <!-- ÚLTIMOS GASTOS -->
+                <div class="card col-list">
+                    <h3 class="font-bold text-gray-900 section-title mb-6">Últimos gastos</h3>
+                    
+                    <div class="expenses-list">
+                        
+                        <!-- Item 1: FIAP -->
+                        <div class="flex items-center justify-between expense-item">
+                            <div class="flex items-center expense-info">
+                                <div class="flex items-center justify-center font-bold expense-icon expense-icon-education">
+                                    
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 expense-title">FIAP</h4>
+                                    <p class="text-xs">15/04/2026 • Educação</p>
+                                </div>
+                            </div>
+                            <span class="font-bold text-red-600">- R$ 700,00</span>
+                        </div>
+
+                        <!-- Item 2: Almoço -->
+                        <div class="flex items-center justify-between expense-item">
+                            <div class="flex items-center expense-info">
+                                <div class="flex items-center justify-center font-bold expense-icon expense-icon-food">
+                                    
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 expense-title">Almoço</h4>
+                                    <p class="text-xs">15/04/2026 • Alimentação</p>
+                                </div>
+                            </div>
+                            <span class="font-bold text-red-600">- R$ 55,00</span>
+                        </div>
+
+                        <!-- Item 3: Exame Médico -->
+                        <div class="flex items-center justify-between expense-item">
+                            <div class="flex items-center expense-info">
+                                <div class="flex items-center justify-center font-bold expense-icon expense-icon-health">
+                                    
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 expense-title">Exame médico</h4>
+                                    <p class="text-xs">15/04/2026 • Saúde</p>
+                                </div>
+                            </div>
+                            <span class="font-bold text-red-600">- R$ 300,00</span>
+                        </div>
+
+                        <!-- Item 4: Compras Online -->
+                        <div class="flex items-center justify-between expense-item expense-item-last">
+                            <div class="flex items-center expense-info">
+                                <div class="flex items-center justify-center font-bold expense-icon expense-icon-leisure">
+                                    
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 expense-title">Compras online</h4>
+                                    <p class="text-xs">15/04/2026 • Lazer</p>
+                                </div>
+                            </div>
+                            <span class="font-bold text-red-600">- R$ 150,00</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

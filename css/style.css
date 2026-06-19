@@ -57,7 +57,6 @@ body {
     }
 }
 
-/* Sidebar */
 .sidebar {
     width: 100%;
     background-color: var(--indigo-900);
@@ -73,7 +72,6 @@ body {
     }
 }
 
-/* Conteúdo Principal */
 .main-content {
     flex: 1;
     padding: 1.5rem;
@@ -187,7 +185,6 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Quadrado verde arredondado com o gradiente da imagem */
 .logo-icon {
     background: linear-gradient(135deg, #22c55e, #15803d);
     width: 2.75rem;
@@ -200,7 +197,6 @@ body {
     flex-shrink: 0;
 }
 
-/* O vetor que faz a onda do 'A' e do gráfico de linha */
 .logo-svg {
     width: 1.5rem;
     height: 1.5rem;
@@ -212,7 +208,6 @@ body {
     stroke-linejoin: round;
 }
 
-/* Mini barras de gráfico no canto inferior direito do ícone */
 .logo-bars {
     position: absolute;
     bottom: 0.45rem;
@@ -236,7 +231,6 @@ body {
     border-radius: 1px;
 }
 
-/* Texto do Logo */
 .logo-text {
     font-size: 1.6rem;
     font-weight: 700;
@@ -244,11 +238,11 @@ body {
 }
 
 .text-green {
-    color: #22c55e; /* Verde idêntico ao do ícone */
+    color: #22c55e;
 }
 
 .text-white {
-    color: #ffffff; /* Branco para destacar no menu azul escuro */
+    color: #ffffff;
 }
 
 /* ==========================================================================
